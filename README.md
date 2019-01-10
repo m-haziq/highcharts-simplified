@@ -1,6 +1,6 @@
 # Getting Started With Highcharts Using Angular 7
 This project provides a beginner's guide to highcharts using angular 7. It provides steps to develop an angular 7 application  from scratch and the integrates highcharts in to it. For those who want to integrate High Charts into
-an existing project, head straight to: [Integrating Django Rest Swagger](https://github.com/m-haziq/django-rest-swagger-docs#integrating-django-rest-swagger).
+an existing project, head straight to: [Integrating Highcharts to angular app](https://github.com/m-haziq/highcharts-simplified/blob/master/README.md#integrating-high-charts).
 > This project uses ubuntu 18.04. If you use any other OS then you might need to change few commands syntax accordingly.
 ## Getting Started
 Before we start, we need this to be installed:
@@ -24,7 +24,7 @@ cd angular7-highcharts
 ng serve
 ```
 Your app is running on `http://localhost:4200/`, you will see a default welcome page.
-#### Making a new component:
+### Making a new component:
 Angular 7 is highly component based, so we should make another component for chart view as:
 ```
 ng generate component output-graph
@@ -38,7 +38,7 @@ This files includes HTML template inside it, includes all html tags.
 This file includes all typescript code, it includes business logic, API calling and data manipulation.
 ###### .SPEC.TS:
 All unit tests go in to this file. We will not cover angular 7 unit tests in this tutorial.
-##### Modify parent component app:
+### Modify parent component app:
 Now moving towards modifying app component according to our need. Remove extra default content from  `app/app.component.html` and include our new component as:
 ```
 <div id="main-head" style="text-align:center">
@@ -64,7 +64,7 @@ Now add some styles to this parent component `app/app.component.css` file as:
   text-align: center;
 }
 ```
-##### Integrating High Charts:
+## Integrating High Charts:
 Now we move forward to add high chart to our new component output-graph, starting with adding a new div to `output-graph/output-graph.component.html` as:
 ```
 <div id="container"></div>
@@ -150,7 +150,7 @@ Now the method `ngOnInit()` actually is the trigger which asks app to draw the h
 
 > In order to customize  highcharts and explore more types of highchart you should visit [HIGH CHART OFFICIAL DOCUMENTATION](https://api.highcharts.com/highcharts/).
 
-##### Populating Highcharts data with Live Dynamic data:
+### Populating Highcharts data with Live Dynamic data:
 Ofcourse we need dynamic data inside our highchart. So in order to get the data I have a sample [API](https://api.myjson.com/bins/13lnf4). You can use your API which returns you data or this one for learning purpose. Now modify the code inside `output-graph/output-graph.component.ts` to:
 ```
 import { Component, OnInit } from '@angular/core';
