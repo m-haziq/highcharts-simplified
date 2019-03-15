@@ -26,7 +26,7 @@ export class OutputGraphComponent implements OnInit {
       height: 700
     },
     title: {
-      text: 'Model Output Scatter Plot'
+      text: 'Sample Scatter Plot'
     },
     credits: {
       enabled: false
