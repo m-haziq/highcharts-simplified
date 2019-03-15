@@ -1,3 +1,5 @@
+[Imgur](https://i.imgur.com/dw8Daol.gifv)
+
 # Getting Started With Highcharts Using Angular 7
 This project provides a beginner's guide to highcharts using angular 7. It provides steps to develop an angular 7 application  from scratch and the integrates highcharts in to it. For those who want to integrate High Charts into
 an existing project, head straight to: [Integrating Highcharts to angular app](https://github.com/m-haziq/highcharts-simplified/blob/master/README.md#integrating-high-charts).
